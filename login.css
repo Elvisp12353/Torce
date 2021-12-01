@@ -1,0 +1,57 @@
+body{ 
+    background:linear-gradient(120deg,#2980b9, #8e44ad);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Helvetica;
+}
+#login_container{
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    height: 50%;
+    background: white;
+    border-radius: 10px;    
+}
+#login_container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+
+}
+#login_container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+#login_container input{
+    
+    font-size: 16px;
+    border:1px solid;
+    border-color:lightgrey;
+    border-radius: 10px;
+    border-width: thin;
+    background: none;
+}
+.in{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    
+
+}
+    
+#Button{
+    background-color: purple;
+}
+#login_container label{
+    position: absolute;     
+    left:5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+
+}
