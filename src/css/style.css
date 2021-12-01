@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  width: 45%;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+/* Codigo para formulario de Registro */
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 50px;
+  color: #8d56e6;
+}
+
+.form {
+  padding: 25px 30px 25px 0px;
+  width: 65%;
+}
+
+.logo header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: #6715eb;
+}
+.form form {
+  margin: 20px 0;
+}
+
+.form form .txt_error {
+  color: #721c24;
+  background: #e44d5c5d;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form form .name-surname {
+  display: flex;
+}
+
+form .name-surname .field:first-child {
+  margin-right: 10px;
+}
+
+form .name-surname .field:last-child {
+  margin-left: 10px;
+}
+
+.form form .field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form form .field label {
+  margin-bottom: 2px;
+  font-size: 19px;
+}
+
+.form form .field input {
+  outline: none;
+}
+
+.form form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form form .image input {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.form form .submit input {
+  margin-top: 13px;
+  height: 45px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #7c3ae9;
+  color: #fff;
+  border: 5px;
+  cursor: pointer;
+}
+
+.form form .field i {
+  position: absolute;
+  right: 15px;
+  color: #ccc;
+  top: 70%;
+  transform: translateY(-40%);
+  cursor: pointer;
+}
+
+.form .already-sup {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.form .already-sup a {
+  color: #6715eb;
+}
+
+.form .already-sup a:hover {
+  text-decoration: underline;
+}
