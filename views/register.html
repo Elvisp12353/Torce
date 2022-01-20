@@ -18,36 +18,38 @@
         </section>
         <section class="form signup">
             
-            <form action="#">
+            <form action="register.php" method="post">
                <!-- <div class="txt_error">Error de mensaje</div>-->
                 <div class="name-surname">
                     <div class="field input">
                         <label for="">Nombre:</label>
-                        <input type="text" placeholder="Escribe tu nombre">
+                        <input type="text" placeholder="Escribe tu nombre" name="Name">
                     </div>
                     <div class="field input">
                         <label for="">Apellido:</label>
-                        <input type="text" placeholder="Escribe tu apellido">
+                        <input type="text" placeholder="Escribe tu apellido" Name ="LastName" >
                     </div>
                 </div>
                 <div class="field input">
                     <label for="">Email:</label>
-                    <input type="email" placeholder="Digita tu correo electrónico">
+                    <input type="email" placeholder="Digita tu correo electrónico" name="Email">
                 </div>
                 <div class="field input">
                     <label for="">Contraseña:</label>
-                    <input type="text" placeholder="Digita una contraseña">
+                    <input type="text" placeholder="Digita una contraseña" name="Password">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
                     <label for="">Selecciona una imagen:</label>
-                    <input type="file">
+                    <input type="file" Name="ProfilePic">
                 </div>
+                <input name="active" id="active" type="hidden" value="false">
+                <input name="code" id='code' value='".$randomnumber."' type='hidden'  required>";
                 <div class="field submit">
                     <input type="submit" value="¡A chatear!">
                 </div>
             </form>
-            <div class="already-sup">¿Ya tienes una cuenta? <a href="views/login.html">Inicia sesión</a></div>
+            <div class="already-sup">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></div>
         </section>
     </div>
     
