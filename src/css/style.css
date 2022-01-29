@@ -140,3 +140,161 @@ form .name-surname .field:last-child {
 .form .already-sup a:hover {
   text-decoration: underline;
 }
+
+/* Vista de usuarios */
+
+.users {
+  padding: 25px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.users .sec-user {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.users .sec-chats {
+  width: 55%;
+}
+
+.container.usersc {
+  width: 45%;
+}
+
+.users header,
+.users-list a {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.users header {
+  flex-direction: column;
+  width: 100%;
+}
+
+.users header .content {
+  flex-direction: column;
+}
+
+.container img {
+  object-fit: cover;
+  border-radius: 80px;
+}
+
+:is(.users, .users-list) .content {
+  display: flex;
+  align-items: center;
+}
+
+.users header .content img {
+  height: 150px;
+  width: 150px;
+}
+
+:is(.users, .users-list) .details {
+  color: #000;
+  margin-left: 15px;
+}
+
+.users .sec-user .details {
+  margin: 0 auto;
+  text-align: center;
+}
+
+:is(.users, .users-list) .details span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+:is(.users, .users-list) .details p {
+  font-size: 15px;
+}
+
+.users header .logout {
+  background-color: #e05f5f;
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin: 20px 0px 0px 0px;
+}
+
+.users .search {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.users .search .text {
+  font-size: 18px;
+}
+
+.users .search input {
+  position: absolute;
+  height: 42px;
+  width: calc(100% - 50px);
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.users .search button {
+  width: 47px;
+  height: 42px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #7c3ae9;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0 5px 5px 0;
+}
+
+.users-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.users-list::-webkit-scrollbar {
+  width: 0px;
+}
+
+.users-list a {
+  margin-bottom: 10px;
+  page-break-after: 10px;
+  padding-right: 15px;
+  border-bottom-color: #f1f1f1;
+}
+
+.users-list a .content img {
+  height: 40px;
+  width: 40px;
+}
+
+.users-list a .content p {
+  color: #6767a6;
+}
+
+.users-list a .status-dot {
+  font-size: 12px;
+  color: #468669;
+}
+
+.users-list a .status-dot.offline {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.users-list a:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
